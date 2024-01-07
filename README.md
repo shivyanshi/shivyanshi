@@ -1,6 +1,8 @@
+<h1 align="center">Welcome to my GitHub Profile! </h1>
+
 ![logo](https://github.com/shivyanshi/shivyanshi/blob/main/banner.png)
 
-<h1 align="center">Welcome to my GitHub Profile! </h1>
+
 <h3 align="center">Prefinal year student at Vellore Institute of Technology Bhopal.</h3>
 
 # 💫 About Me:
