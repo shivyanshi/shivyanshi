@@ -3,10 +3,10 @@
 ![logo](https://github.com/shivyanshi/shivyanshi/blob/main/banner.png)
 
 
-<h3 align="center">Prefinal year student at Vellore Institute of Technology Bhopal.</h3>
+<h3 align="center">Final year student at Vellore Institute of Technology Bhopal.</h3>
 
 # 💫 About Me:
-🌱 I’m currently learning cloud security.<br>💬 Ask me about Java, Linux and all things cyber.<br>🤝 I’m always up for learning a new skill.<br>⚡ Fun fact: Blogging is a conversation, not a code  :)
+🌱 Carving a niche in Data Analytics.<br>💬 Ask me about Java, Linux and all things cyber.<br>🤝 I’m always up for learning a new skill.<br>⚡ Fun fact: Blogging is a conversation, not a code  :)
 
 
 ## 🌐 Socials:
