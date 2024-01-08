@@ -26,13 +26,12 @@
 ![](https://github-readme-streak-stats.herokuapp.com/?user=shivyanshi&theme=tokyonight&hide_border=false)<br/><br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=shivyanshi&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=shivyanshi&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4)
+
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=shivyanshi&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
 
----
-[![](https://visitcount.itsvg.in/api?id=shivyanshi&icon=5&color=8)](https://visitcount.itsvg.in)
+
+
 
 
