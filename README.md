@@ -1,3 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, height=400">
+    <title>GitHub Banner - Lead Cloud Security Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 1200px;
+            height: 400px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1429 100%);
+            font-family: 'Courier New', monospace;
+            position: relative;
+        }
+        
+        /* Animated grid background */
+        .grid {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 247, 247, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 247, 247, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridScroll 20s linear infinite;
+        }
+        
+        @keyframes gridScroll {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(50px);
+            }
+        }
+        
+        /* Floating particles */
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(0, 247, 247, 0.6);
+            border-radius: 50%;
+            animation: float 15s infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-400px) translateX(100px);
+                opacity: 0;
+            }
+        }
+        
+        /* Glowing orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.3;
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        .orb1 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 247, 247, 0.4), transparent);
+            top: -100px;
+            right: -50px;
+        }
+        
+        .orb2 {
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.3), transparent);
+            bottom: -80px;
+            left: -50px;
+            animation-delay: 2s;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
+        }
+        
+        /* Main content container */
+        .content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 80px;
+        }
+        
+        /* Shield icon */
+        .shield-container {
+            position: absolute;
+            right: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.15;
+        }
+        
+        .shield {
+            width: 280px;
+            height: 320px;
+            position: relative;
+        }
+        
+        .shield-bg {
+            fill: none;
+            stroke: #00f7f7;
+            stroke-width: 2;
+            filter: drop-shadow(0 0 20px rgba(0, 247, 247, 0.5));
+            animation: shieldGlow 3s ease-in-out infinite;
+        }
+        
+        @keyframes shieldGlow {
+            0%, 100% {
+                filter: drop-shadow(0 0 20px rgba(0, 247, 247, 0.5));
+            }
+            50% {
+                filter: drop-shadow(0 0 35px rgba(0, 247, 247, 0.8));
+            }
+        }
+        
+        /* Lock icon inside shield */
+        .lock {
+            fill: none;
+            stroke: #00f7f7;
+            stroke-width: 2;
+            stroke-linecap: round;
+        }
+        
+        /* Text styles */
+        .title {
+            font-size: 72px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(0, 247, 247, 0.5);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-size: 32px;
+            color: #00f7f7;
+            text-shadow: 0 0 15px rgba(0, 247, 247, 0.6);
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+            animation: flicker 3s infinite;
+        }
+        
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+        
+        .tagline {
+            font-size: 18px;
+            color: #8b9dc3;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+        
+        /* Tech badges */
+        .badges {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: rgba(0, 247, 247, 0.1);
+            border: 1px solid rgba(0, 247, 247, 0.3);
+            padding: 8px 16px;
+            border-radius: 6px;
+            color: #00f7f7;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px rgba(0, 247, 247, 0.2);
+            animation: badgePulse 2s ease-in-out infinite;
+        }
+        
+        .badge:nth-child(1) { animation-delay: 0s; }
+        .badge:nth-child(2) { animation-delay: 0.2s; }
+        .badge:nth-child(3) { animation-delay: 0.4s; }
+        .badge:nth-child(4) { animation-delay: 0.6s; }
+        .badge:nth-child(5) { animation-delay: 0.8s; }
+        
+        @keyframes badgePulse {
+            0%, 100% {
+                box-shadow: 0 0 15px rgba(0, 247, 247, 0.2);
+                border-color: rgba(0, 247, 247, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(0, 247, 247, 0.4);
+                border-color: rgba(0, 247, 247, 0.5);
+            }
+        }
+        
+        /* Scan line effect */
+        .scanline {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(0, 247, 247, 0.5), 
+                transparent
+            );
+            animation: scan 4s linear infinite;
+        }
+        
+        @keyframes scan {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: 100%;
+            }
+        }
+        
+        /* Code effect in corner */
+        .code-stream {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 10px;
+            color: rgba(0, 247, 247, 0.3);
+            line-height: 1.4;
+            text-align: right;
+            animation: fadeInOut 8s infinite;
+        }
+        
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background effects -->
+    <div class="grid"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="scanline"></div>
+    
+    <!-- Particles -->
+    <script>
+        for(let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            document.body.appendChild(particle);
+        }
+    </script>
+    
+    <!-- Shield icon -->
+    <div class="shield-container">
+        <svg class="shield" viewBox="0 0 200 240">
+            <path class="shield-bg" d="M100 10 L180 50 L180 120 Q180 200 100 230 Q20 200 20 120 L20 50 Z"/>
+            <g class="lock" transform="translate(100, 110)">
+                <rect x="-25" y="0" width="50" height="40" rx="5"/>
+                <path d="M-20 0 L-20 -20 Q-20 -35 0 -35 Q20 -35 20 -20 L20 0"/>
+                <circle cx="0" cy="15" r="6"/>
+                <line x1="0" y1="21" x2="0" y2="30"/>
+            </g>
+        </svg>
+    </div>
+    
+    <!-- Code stream effect -->
+    <div class="code-stream">
+        &gt; aws.security.scan()<br>
+        &gt; azure.defender.monitor()<br>
+        &gt; gcp.security.analyze()<br>
+        &gt; threat.detection: ACTIVE<br>
+        &gt; status: PROTECTED
+    </div>
+    
+    <!-- Main content -->
+    <div class="content">
+        <div class="title">CLOUD SECURITY</div>
+        <div class="subtitle">LEAD SPECIALIST</div>
+        <div class="tagline">Architecting Secure Cloud Infrastructures | Zero Trust Advocate</div>
+        <div class="badges">
+            <div class="badge">AWS SECURITY</div>
+            <div class="badge">AZURE DEFENDER</div>
+            <div class="badge">GCP SECURITY</div>
+            <div class="badge">KUBERNETES</div>
+            <div class="badge">DEVSECOPS</div>
+        </div>
+    </div>
+</body>
+</html>
+
 # 🛡️ Security Architect | Cloud Security Engineer
 
 <div align="center">
