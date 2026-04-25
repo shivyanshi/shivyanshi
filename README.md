@@ -1,4 +1,4 @@
-# 🛡️ Shivyanshi Shukla | Lead Specialist - Cloud Security
+# 🛡️ Shivyanshi Shukla | Senior Engineer - Cloud Security
 
 <div align="center">
   
@@ -21,7 +21,7 @@
 class CloudSecurityLead:
     def __init__(self):
         self.name = "Shivyanshi Shukla"
-        self.role = "Lead Specialist - Cloud Security"
+        self.role = "Senior Engineer - Cloud Security"
         self.location = "India"
         self.cloud_platforms = ["AWS", "Azure"]
         self.specializations = [
